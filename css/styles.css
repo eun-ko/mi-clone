@@ -12,3 +12,51 @@
     width:930px;
     height:160px;
 }
+
+
+#miniintern-list-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+#miniintern-list-row{
+    width:935px;
+    height:285px;
+    margin-top:40px;
+    display:flex;
+    justify-content:space-between;
+    color:#a3a3a3;
+}
+.miniintern-banner{
+    width:215px;
+    height:290px;
+    border-radius:5px;
+    border:1px solid #D2D7D7;
+    margin-bottom:20px;
+}
+.miniintern-banner_img{
+    width:215px;
+    height:160px;
+}
+.miniintern-banner_type{
+    font-size:13px;
+    font-weight: 400;
+    margin:10px 15px;
+}
+.miniintern-banner_content{
+    margin:0 15px 10px 15px;
+    font-size:15px;
+    font-weight: 400;
+    line-height: 21px;
+   
+}
+.miniintern-banner_status{
+    border-top:1px solid #dee3e3;
+    padding:15px;
+    box-sizing: border-box;
+    font-size:12px;
+    font-weight: 800;
+}
