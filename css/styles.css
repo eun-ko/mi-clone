@@ -1,0 +1,14 @@
+#promotion-banner-zone{
+    display:flex;
+    justify-content:center;
+    height:230px;
+    background-color: #F5F6F6;
+    padding:35px 0;
+    box-sizing:border-box;
+    border-bottom:1px solid #D2D7D7;
+}
+
+#promotion-banner-img{
+    width:930px;
+    height:160px;
+}
