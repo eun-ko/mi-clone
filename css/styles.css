@@ -14,18 +14,100 @@
 }
 
 
+
+
+
+
+#filter-search-bar-zone{
+    display: flex;
+    justify-content:center;
+    border-bottom:1px solid #D2D7D7;
+}
+
+#filter-search-bar-wrapper{
+    display: flex;
+    justify-content:center;
+    width:930px;
+}
+
+#filter-bar{
+    width:80%;
+    height:60px;
+    padding:12px 0;
+    box-sizing: border-box;
+}
+#filter-bar_recruit{
+    width:105px;
+    height:100%;
+    margin-right:15px;
+    border-radius:5px;
+    border:1px solid #D2D7D7;
+    padding:5px;
+}
+#filter-bar_field{
+    width:145px;
+    height:100%;
+    border-radius:5px;
+    border:1px solid #D2D7D7;
+}
+
+
+#search-bar-wrapper{
+    position: relative;
+    width:225px;
+    height:60px;
+    padding:12px 0;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#search-icon{
+    position:absolute;
+    width:17px;
+    height:17px;
+    left:0px;
+}
+
+#close-icon{
+    position:absolute;
+    width:17px;
+    height:17px;
+    right:0px;
+}
+
+#search-bar_input{
+    border:none;
+    outline:none;
+    border-bottom: 1px solid #ABB1B1;
+    width:100%;
+    height:100%;
+    padding-left:23px;
+}
+
+#search-bar_input::placeholder{ 
+    color:#a3a3a3;
+    font-weight:500;
+    font-size:15px;
+}
+
+
+
+
+
 #miniintern-list-wrapper{
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    
+    background-color: #FCFDFD;
 }
 
 #miniintern-list-row{
     width:935px;
     height:285px;
-    margin-top:40px;
+    margin-top:35px;
     display:flex;
     justify-content:space-between;
     color:#a3a3a3;
@@ -35,7 +117,6 @@
     height:290px;
     border-radius:5px;
     border:1px solid #D2D7D7;
-    margin-bottom:20px;
 }
 .miniintern-banner_img{
     width:215px;
