@@ -22,6 +22,7 @@
 
                 <div class="filter-bar-recruit">
                     <p class="filter-bar-recruit-selected-option"></p>
+                    <img class="arrow-icon" src="assets/icon/arrow.jpeg" />
                     <ul class="filter-bar-recruit-option-list">
                         <li class="filter-bar-recruit-option">전체</li>
                         <li class="filter-bar-recruit-option">모집중</li>
@@ -207,7 +208,7 @@
             recruitStatusOption.forEach(option => {
                 const recruitStatus = option.innerHTML;
                 const handleChangeSelectedRecruitStatus = () => {
-                    selectedRecruitStatus.innerHTML = recruitStatus;
+                    selectedRecruitStatus.innerHTML = recruitStatus
                 }
                 option.addEventListener('click', handleChangeSelectedRecruitStatus)
             });
