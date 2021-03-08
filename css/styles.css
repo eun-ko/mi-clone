@@ -1,10 +1,14 @@
 .promotion-banner-zone{
     display:flex;
     justify-content:center;
+    
     height:230px;
+    
     background-color: #F5F6F6;
+    
     padding:35px 0;
     box-sizing:border-box;
+    
     border-bottom:1px solid #D2D7D7;
 }
 
@@ -31,60 +35,121 @@
 .filter-search-bar-wrapper{
     display: flex;
     justify-content:space-between;
+    
     width:930px;
     height:60px;
+    
     padding:12px 0;
     box-sizing:border-box;
 }
 
+.filter-bar-wrapper{
+    display:flex;
+}
 
 .filter-bar-recruit{
+    position: relative;
+   
     width:105px;
-    height:100%;
+    
     border-radius:5px;
     border:1px solid #D2D7D7;
-    padding:5px;
+    
     margin-right:15px;
+   
+    font-size:13px;
+}
+.filter-bar-recruit:hover{
+    cursor: pointer;
+}
+.filter-bar-recruit-selected-option{
+    display:flex;
+    align-items: center;
+
+    height:100%;
+    
+    padding-left:10px;
+}
+.filter-bar-recruit-option-list{
+    display:none;
+}
+.show-filter-bar-recruit-option-list{
+    display:block;
+
+    width:105px;
+    
+    padding:20px 5px;
+    box-sizing:border-box;
+ 
+    background-color:white;
+    
+    border:1px solid #D2D7D7;
+    border-radius:5px;
+
+    position: absolute;
+    top:30px;
+    left:0;
 
 }
+.filter-bar-recruit-option{
+    padding:10px 5px;
+}
+
+
+
+
 .filter-bar-field{
     width:145px;
     height:100%;
+
     border-radius:5px;
     border:1px solid #D2D7D7;
+    
     padding:5px;
+}
+.filter-bar-field:hover{
+    cursor: pointer;
 }
 
 
 .search-bar-wrapper{
-    position: relative;
-    width:225px;
     display:flex;
     justify-content:center;
     align-items: center;
+
+    position: relative;
+    
+    width:225px;
+    
     padding:0 23px;
     box-sizing:border-box;
+    
     border-bottom: 1px solid #ABB1B1;
 }
 
 .search-icon{
     position:absolute;
+    
     width:17px;
     height:17px;
+    
     left:0px;
 }
 
 .close-icon{
     position:absolute;
+    
     width:17px;
     height:17px;
+    
     right:0px;
 }
 
 .search-bar-input{
+    width:100%;
+
     border:none;
     outline:none;
-    width:100%;
 }
 
 .search-bar-input::placeholder{ 
@@ -96,61 +161,71 @@
 
 
 
-
 .miniintern-list-wrapper{
     display:flex;
     align-items: center;
     justify-content:center;
+
     background-color: #FCFDFD;
+    
     padding-top:40px;
 }
 
 .miniintern-list{
-    width:935px;
     display:flex;
     flex-wrap:wrap;
+
+    width:935px;
+
     color:#a3a3a3;
 }
 .miniintern-banner-overlay-background{
-    background-color:#384040;
-    position:absolute;
-    z-index:1;
+    display:none;
+
     width:inherit;
     height:inherit;
+
+    position:absolute;
+    z-index:1;
+
+    background-color: rgba(56, 64, 64,0.5);
     border-radius:5px;
-    display:none;
-    opacity:0.5;
+   
 }
 .miniintern-banner-overlay-type{
-    position: absolute;
-    z-index:2;
+    display:none;
+
     width:120px;
     height:120px;
+
     margin:90px 50px;
-    overflow: hidden;
-    border-radius:50%;
+    
     background-color: #6fc5ff;
-    display:none;
-    text-align: center;
-    color: white;
+    border-radius:50%;
+    color:#ffffff;
 }
 .miniintern-banner{
     width:215px;
     height:290px;
+
     border-radius:5px;
     border:1px solid #D2D7D7;
+    
     margin:0 22px 22px 0;
 }
 .miniintern-banner:nth-child(4n){
     margin-right:0;
 }
-.miniintern-banner:hover .miniintern-banner-overlay-background{
+.miniintern-banner:hover .miniintern-banner-overlay-background  {
     cursor:pointer;
     display:block;
 }
 .miniintern-banner:hover .miniintern-banner-overlay-type{
     cursor:pointer;
-    display:block;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
 }
 .miniintern-banner-img{
     width:215px;
@@ -159,26 +234,31 @@
 .miniintern-banner-type{
     font-size:13px;
     font-weight: 400;
+
     margin:10px 15px;
 }
 .miniintern-banner-content{
+    display: -webkit-box; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+
+    height:42px;
+    
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
     margin:0 15px 10px 15px;
+    
     font-size:15px;
     font-weight: 400;
     line-height: 21px;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    display: -webkit-box; 
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-wrap:break-word;
-    height:42px;
-   
 }
 .miniintern-banner-status{
-    border-top:1px solid #dee3e3;
     padding:15px;
     box-sizing: border-box;
+    
+    border-top:1px solid #dee3e3;
+    
     font-size:12px;
     font-weight: 800;
 }
