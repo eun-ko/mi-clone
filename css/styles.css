@@ -12,6 +12,10 @@
     width:930px;
     height:160px;
 }
+.promotion-banner-img:hover{
+    cursor:pointer;
+}
+
 
 
 
@@ -107,6 +111,29 @@
     flex-wrap:wrap;
     color:#a3a3a3;
 }
+.miniintern-banner-overlay-background{
+    background-color:#384040;
+    position:absolute;
+    z-index:1;
+    width:inherit;
+    height:inherit;
+    border-radius:5px;
+    display:none;
+    opacity:0.5;
+}
+.miniintern-banner-overlay-type{
+    position: absolute;
+    z-index:2;
+    width:120px;
+    height:120px;
+    margin:90px 50px;
+    overflow: hidden;
+    border-radius:50%;
+    background-color: #6fc5ff;
+    display:none;
+    text-align: center;
+    color: white;
+}
 .miniintern-banner{
     width:215px;
     height:290px;
@@ -116,6 +143,14 @@
 }
 .miniintern-banner:nth-child(4n){
     margin-right:0;
+}
+.miniintern-banner:hover .miniintern-banner-overlay-background{
+    cursor:pointer;
+    display:block;
+}
+.miniintern-banner:hover .miniintern-banner-overlay-type{
+    cursor:pointer;
+    display:block;
 }
 .miniintern-banner-img{
     width:215px;
