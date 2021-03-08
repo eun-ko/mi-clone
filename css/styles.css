@@ -1,4 +1,4 @@
-#promotion-banner-zone{
+.promotion-banner-zone{
     display:flex;
     justify-content:center;
     height:230px;
@@ -8,7 +8,7 @@
     border-bottom:1px solid #D2D7D7;
 }
 
-#promotion-banner-img{
+.promotion-banner-img{
     width:930px;
     height:160px;
 }
@@ -18,13 +18,13 @@
 
 
 
-#filter-search-bar-zone{
+.filter-search-bar-zone{
     display: flex;
     justify-content:center;
     border-bottom:1px solid #D2D7D7;
 }
 
-#filter-search-bar-wrapper{
+.filter-search-bar-wrapper{
     display: flex;
     justify-content:space-between;
     width:930px;
@@ -34,7 +34,7 @@
 }
 
 
-#filter-bar_recruit{
+.filter-bar-recruit{
     width:105px;
     height:100%;
     border-radius:5px;
@@ -43,7 +43,7 @@
     margin-right:15px;
 
 }
-#filter-bar_field{
+.filter-bar-field{
     width:145px;
     height:100%;
     border-radius:5px;
@@ -52,7 +52,7 @@
 }
 
 
-#search-bar-wrapper{
+.search-bar-wrapper{
     position: relative;
     width:225px;
     display:flex;
@@ -63,27 +63,27 @@
     border-bottom: 1px solid #ABB1B1;
 }
 
-#search-icon{
+.search-icon{
     position:absolute;
     width:17px;
     height:17px;
     left:0px;
 }
 
-#close-icon{
+.close-icon{
     position:absolute;
     width:17px;
     height:17px;
     right:0px;
 }
 
-#search-bar_input{
+.search-bar-input{
     border:none;
     outline:none;
     width:100%;
 }
 
-#search-bar_input::placeholder{ 
+.search-bar-input::placeholder{ 
     color:#a3a3a3;
     font-weight:500;
     font-size:15px;
@@ -93,18 +93,18 @@
 
 
 
-#miniintern-list-wrapper{
+.miniintern-list-wrapper{
     display:flex;
-    flex-wrap:wrap;
     align-items: center;
     justify-content:center;
     background-color: #FCFDFD;
     padding-top:40px;
 }
 
-#miniintern-list-row{
+.miniintern-list{
     width:935px;
     display:flex;
+    flex-wrap:wrap;
     color:#a3a3a3;
 }
 .miniintern-banner{
@@ -114,16 +114,19 @@
     border:1px solid #D2D7D7;
     margin:0 22px 22px 0;
 }
-.miniintern-banner_img{
+.miniintern-banner:nth-child(4n){
+    margin-right:0;
+}
+.miniintern-banner-img{
     width:215px;
     height:160px;
 }
-.miniintern-banner_type{
+.miniintern-banner-type{
     font-size:13px;
     font-weight: 400;
     margin:10px 15px;
 }
-.miniintern-banner_content{
+.miniintern-banner-content{
     margin:0 15px 10px 15px;
     font-size:15px;
     font-weight: 400;
@@ -137,7 +140,7 @@
     height:42px;
    
 }
-.miniintern-banner_status{
+.miniintern-banner-status{
     border-top:1px solid #dee3e3;
     padding:15px;
     box-sizing: border-box;
